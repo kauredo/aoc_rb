@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 - No unreleased changes!
 
+## [0.2.5]
+### Fixed
+- Fixed deprecation status for wrong commands (by [@kauredo](https://github.com/kauredo))
+- Added tests for output task (by [@kauredo](https://github.com/kauredo))
+- Spec:all task added to run all tests (by [@kauredo](https://github.com/kauredo))
+
 ## [0.2.4]
 ### Fixed
 - Output task fixed (by [@kauredo](https://github.com/kauredo))
@@ -46,7 +52,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Initial release.
 
-[Unreleased]: https://github.com/pacso/aoc_rb/compare/v0.2.4...HEAD
+[Unreleased]: https://github.com/pacso/aoc_rb/compare/v0.2.5...HEAD
+[0.2.4]: https://github.com/pacso/aoc_rb/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/pacso/aoc_rb/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/pacso/aoc_rb/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/pacso/aoc_rb/compare/v0.2.1...v0.2.2

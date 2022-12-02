@@ -29,6 +29,10 @@ end
 
 module AocRb
   class App < Thor
+    def self.exit_on_failure?
+      true
+    end
+
     desc "fetch", "Downloads the input file and problem statement for today, or an optionally specified year / day", hide: true
     method_option :year, aliases: "-y", type: :numeric, default: Time.now.year
     method_option :day, aliases: "-d", type: :numeric, default: Time.now.day
@@ -124,6 +128,12 @@ module AocRb
       spec_dir = File.join("spec", year.to_s, AocRb::Puzzle.padded(day))
 
       Kernel.exec( "bundle exec rspec #{spec_dir}" )
+    end
+
+    desc "spec:all", "runs all tests"
+
+    define_method(:'spec:all') do
+      Kernel.exec( "bundle exec rspec" )
     end
 
     desc "prep", "preps everything you need for a new puzzle"
